@@ -36,9 +36,7 @@ inputEmail.addEventListener('blur',function (evt) {
   inputEmail.classList.add("form-invalid");
 });
 
-// console.log(inputName.validity);
 btnSubmit.addEventListener('click',function (evt) {
-  evt.preventDefault();
   let name = inputName.value
   let tel = inputTel.value
   let email = inputEmail.value
@@ -47,9 +45,7 @@ btnSubmit.addEventListener('click',function (evt) {
   console.log(` Имя: ${name}
 Телефон: ${tel}
 Почта: ${email}`);
-  popup.classList.remove("modal-show");} else {
-    alert('Заполните поля формы со звездочкой');
-  }
+  popup.classList.remove("modal-show");} 
 });
 
 $('#phone').mask('+380(99) 999-99-99');
