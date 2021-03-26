@@ -12,27 +12,35 @@
 </head>
 
 <body>
+  <div class="main-wrap">
+
   <header>
-    <!-- <div class="head_wrapp"> -->
     <div class="wrapper container">
       <div class="row">
-        <div class="head_item items_one col-1">
-          <img src="images\logo-header.jpg" alt="Логотип компании">
-        </div>
-        <div class="head_item items_two col-3">
-          <h2 class="head_title">Название компании</h2>
-          <p class="head_text">самая клевая компания</p>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="head_item items_one">
+            <img src="images\logo-header.jpg" alt="Логотип компании">
+          </div>
         </div>
 
-        <div class="head_item col-7 items_three">
-          <p class="head_tel">+7(499) 777-77-77</p>
-          <p class="head_tel">+7(499) 777-77-77</p>
-          <p class="tel_text">Обратная связь</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="head_item items_two">
+            <h2 class="head_title">Название компании</h2>
+            <p class="head_text">самая клевая компания</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-7">
+          <div class="head_item items_three">
+            <p class="head_tel">+7(499) 777-77-77</p>
+            <p class="head_tel">+7(499) 777-77-77</p>
+            <p class="tel_text">Обратная связь</p>
+          </div>
         </div>
 
       </div>
     </div>
-  </header>
 
   <nav class="menu">
     <div class="wrapper">
@@ -50,18 +58,19 @@
     </div>
   </nav>
 
-  <!-- <div class="slider">
-  <img src="images\slide.png" alt="слайд первый">
-</div> -->
+    </header>
+
+
 <div class="container">
   <div class="row justify-content-md-center">
+    <div class="col-12">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active ">
-          <img src="images\slide.png" alt="слайд первый">
+          <img src="images\slide.png" alt="слайд первый" width="100%">
         </div>
         <div class="carousel-item">
-          <img src="images\slide.png" alt="слайд первый">
+          <img src="images\slide.png" alt="слайд второй" width="100%">
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -73,6 +82,7 @@
         </a>
       </div>
     </div>
+        </div>
   </div>
 </div>
 
@@ -85,15 +95,14 @@
       <li href='#' class="way-item">Бытовая техника</li>
     </ul>
 
-    <div class="container" style="margin-left: 0px;  margin-right: 0px;">
+    <div class="container-fluid " style="margin-left: 0px;  margin-right: 0px;">
       <div class="row">
 
-        <div class="col-2">
-          <div>
-            <ul class="sidebar">
+        <div class="col-sm-12 col-md-2 sidebar-wrap">
+            <ul class="sidebar" >
               <li href='#' class="sidebar-item">Автомобили</li>
               <li href='#' class="sidebar-item">Бытовая техника
-                <ul class="sidebar-list">
+                <ul class="sidebar-list" style="padding-left: 20px;">
                   <li href='#'>Микроволновки</li>
                   <li href='#'>Холодильники</li>
                   <li href='#'>Посудомоечные машины</li>
@@ -105,7 +114,6 @@
               <li href='#' class="sidebar-item">Одежда</li>
               <li href='#' class="sidebar-item">Недвижимость</li>
             </ul>
-          </div>
 
           <!-- <div class="price_close">
           <img src="#" alt="кнопка закрытия">
@@ -113,11 +121,10 @@
         </div> -->
       </div>
 
-      <div class="col-10">
+      <div class="col">
         <div class="catalog row">
 
-          <div class="col-4">
-            <div class="catalog_item">
+          <div class="col-sm-12 col-md-4 catalog_item">
               <p class="catalog_item_img">
                 <img src="images\product.png" alt="чайник который стиралка"  class="catalog_item_img"  width="200px" height="230px"></p>
                 <p class="catalog_item_text">Самый клевый чайник, который надо купить!</p>
@@ -125,11 +132,9 @@
                   <p class="catalog_item_price">1 900p.</p>
                   <img src="images\shopping-basket.png" alt="корзинка" height="25px" width="25px">
                 </div>
-              </div>
             </div>
 
-            <div class="col-4">
-              <div class="catalog_item">
+            <div class="col-sm-12 col-md-4 catalog_item">
                 <p class="catalog_item_img">
                   <img src="images\product.png" alt="чайник который стиралка"  class="catalog_item_img"  width="200px" height="230px"></p>
                   <p class="catalog_item_text" >Самый клевый чайник, который надо купить!</p>
@@ -137,11 +142,9 @@
                     <p class="catalog_item_price">1 900p.</p>
                     <img src="images\shopping-basket.png" alt="корзинка" height="25px" width="25px">
                   </div>
-                </div>
               </div>
 
-              <div class="col-4">
-                <div class="catalog_item">
+              <div class="col-sm-12 col-md-4 catalog_item">
                   <p class="catalog_item_img">
                     <img src="images\product.png" alt="чайник который стиралка"  class="catalog_item_img"  width="200px" height="230px"></p>
                     <p class="catalog_item_text">Самый клевый чайник, который надо купить!</p>
@@ -149,11 +152,9 @@
                       <p class="catalog_item_price">1 900p.</p>
                       <img src="images\shopping-basket.png" alt="корзинка" height="25px" width="25px">
                     </div>
-                  </div>
                 </div>
 
-                <div class="col-4">
-                  <div class="catalog_item">
+                <div class="col-sm-12 col-md-4 catalog_item">
                     <p class="catalog_item_img">
                       <img src="images\product.png" alt="чайник который стиралка"  class="catalog_item_img"  width="200px" height="230px"></p>
                       <p class="catalog_item_text">Самый клевый чайник, который надо купить!</p>
@@ -161,11 +162,9 @@
                         <p class="catalog_item_price">1 900p.</p>
                         <img src="images\shopping-basket.png" alt="корзинка" height="25px" width="25px">
                       </div>
-                    </div>
                   </div>
 
-                  <div class="col-4">
-                    <div class="catalog_item">
+                  <div class="col-sm-12 col-md-4 catalog_item">
                       <p class="catalog_item_img">
                         <img src="images\product.png" alt="чайник который стиралка"  class="catalog_item_img"  width="200px" height="230px"></p>
                         <p class="catalog_item_text">Самый клевый чайник, который надо купить!</p>
@@ -173,7 +172,6 @@
                           <p class="catalog_item_price">1 900p.</p>
                           <img src="images\shopping-basket.png" alt="корзинка" height="25px" width="25px">
                         </div>
-                      </div>
                     </div>
 
                     <div class="inform">
@@ -181,12 +179,12 @@
                       <div class="container">
                         <div class="row">
 
-                          <div class="col-6">
+                          <div class="col-sm-12 col-md-6">
                             <p class="inform_text">Компания "Пиксель плюс" существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов,
                               поэтому можем уверенно называть себя профессионалами. На данный моммент наш коллектив состоит из более чем 30 сотрудников
                               работающих в двух офисах в Москве и Зеленограде. Характерные для этого жанра мотивы: неразделенной любви, ухода молодости, угасания души</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-12 col-md-6">
                               <p class="inform_text">Одним из основных направлений нашей работы является поисковое продвижение сайтов, на данный момент
                                 мы работем с более чем 150 постонными клиентами по более чем 11 000 поисковым запросам. При этом в
                                 работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки
@@ -207,17 +205,17 @@
               <footer>
                 <div class="wrapper">
                   <div class="container" style="margin-left: 0px;  margin-right: 0px;">
-                    <div class="row footer-wrap">
+                    <div class="row footer-items">
 
-                      <div class="col-4">
+                      <div class="col-sm-12 col-md-4">
                         <div class="copywrite">
-                          <p>© 2012-2013 ЗАО "Компания"</p>
-                          <p>info@name.ru</p>
+                          <p class="footer-copywrite">© 2012-2013 ЗАО "Компания"</p>
+                          <p class="footer-copywrite">info@name.ru</p>
                         </div>
                       </div>
 
-                      <div class="col-4">
-                        <ul>
+                      <div class="col-sm-12 col-md-4">
+                        <ul class="footer-list">
                           <li href='#'>Главная</li>
                           <li href='#'>Каталог</li>
                           <li href='#'>Доставка и оплата</li>
@@ -226,7 +224,7 @@
                         </ul>
                       </div>
 
-                      <div class="col-4 logo">
+                      <div class="col-sm-12 col-md-4 logo">
                         <table>
                           <tr>
                             <td></td>
@@ -237,7 +235,7 @@
                             <td></td>
                           </tr>
                         </table>
-                        <p><span>Разработка сайта</span> —
+                        <p><span class="footer-text">Разработка сайта</span> —
                           <br>компания "Пиксель Плюс"</p>
                       </div>
 
@@ -245,9 +243,37 @@
                   </div>
                 </div>
               </footer>
+
+              <form class="feedback-form modal">
+
+                <div class="form-wrap">
+                <h2 class="form-title">Обратная связь</h2>
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="form-label">Ваше имя*</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Телефон*</label>
+                  <input type="tel" class="form-control" id="phone"  placeholder=" " required>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="formGroupExampleInput3" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                  <label for="FormControlTextarea1" class="form-label">Сообщение</label>
+                  <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+                </div>
+                <button type="submit" class="form-btn btn mb-2">Отправить</button>
+                <button class="modal-close close" type="button">Закрыть</button>
+                </div>
+
+              </form>
+
               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+              <script src="js/jquery.maskedinput.min.js"></script>
               <script src="js/main.js" charset="utf-8"></script>
             </body>
             </html>
