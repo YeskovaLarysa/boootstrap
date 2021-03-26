@@ -48,7 +48,7 @@ btnSubmit.addEventListener('click',function (evt) {
 Телефон: ${tel}
 Почта: ${email}`);
   popup.classList.remove("modal-show");} else {
-    console.log('Заполните поля формы');
+    alert('Заполните поля формы со звездочкой');
   }
 });
 
