@@ -72,8 +72,8 @@ header {
 .tel_text:hover,
 .tel_text:focus,
 .tel_text:active {
-  color: rgba(255, 0, 0, 0.6)
-
+  color: rgba(255, 0, 0, 0.6);
+	cursor: pointer;
 }
 .menu-list{
 	display: flex;
@@ -372,5 +372,11 @@ table {
 @media screen and (min-width: 720px) and (max-width: 982px){
 	.sidebar-wrap {
 		margin-right: 30px;
+	}
+}
+
+@media screen and ( max-height: 570px ) {
+	.feedback-form {
+	overflow: scroll;
 	}
 }
